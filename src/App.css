@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #2D283E;
+  --second-color: #802BB1;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--second-color);
+  background: var(--main-bg-color);
+  min-height: 100vh;
+}
+
+.header{
+  padding-top: 30px;
+}
+
+.header h1{
+  font-size: 3rem;
+}
+
+.wrapper{
+  width: 50% ;
+  margin: 0 auto;
+}
+
+.header, .todo-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input, .add-btn{
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  background: white;
+}
+
+.add-btn{
+  color: var(--second-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background:  var(--second-color);
+  color: white;
+}
+
+.todo-list {
+  list-style: none;
+  white-space: normal;
+}
+
+.todo {
+  word-break: break-all;
+  margin: 1.5rem 0;
+  background: white;
+  font-size: 1.2rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn, .complete-btn {
+  background:  var(--second-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn{
+  background: #00887A;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+} 
+
+.select {
+  margin: 1rem;
+}
+
+.select-todo {
+  color:  var(--second-color);
+  cursor: pointer;
+  width: 8rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+} 
+
+@media (max-width: 426px) 
+{
+  html{
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
